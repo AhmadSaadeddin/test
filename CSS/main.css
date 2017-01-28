@@ -5,26 +5,51 @@ body {
   border: 1px solid #000;
 }
 .container {
+  padding: 0;
+  margin: 0;
   border: 1px solid #FB8100;
 }
 .header {
+  padding-left: 0px;
+  margin: 0;
   border: 1px solid #000;
 }
 .header ul{
   display: inline-block;
-  padding: 0px;
-  margin: 0px;
+  padding-left: 1px;
+  padding-top: 7px;
+  margin: 0;
   border: 1px solid #000;
-  list-style: none;
+
+  background-color: black;
+  height: 30px;
+}
+.header li {
+  font-size: 1em;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+    border: 1px solid #000;
 }
 .header h1{
-  display: inline-block;
+  background-color: black;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  display: inline;
   border: 1px solid #000;
+  height: 30px;
+}
+h1{
+  color: white;
 }
 .maincontent {
   border: 1px solid #000;
+  margin: 50px;
 }
 .footer {
-
+  padding: 5px;
+  margin: 10px;
   border: 1px solid #000;
 }
