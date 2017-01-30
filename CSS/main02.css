@@ -1,0 +1,28 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+.header {
+  color: red;
+  background-color: yellow;
+}
+.container{
+  background-color: blue;
+}
+.leftside {
+  width: 25%;
+  background-color: cyan;
+  float: left;
+}
+.center {
+  width: 50%;
+  margin: 0 auto;
+}
+.rightside {
+  width: 25%;
+  background-color: cyan;
+  float: right;
+}
+.footer {
+  background-color: red;
+}
