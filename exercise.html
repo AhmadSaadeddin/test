@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Execrise of Eloquent JavaScript - chapter 2</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    //Exercise number 1
+    let triangle = "#";
+      for (var i = 0; i < 7; i++) {
+        console.log(triangle);
+        triangle += "#";
+      }
+      //Exercise number 2
+      for (var i = 0; i <= 100; i++) {
+       if (i%5 === 0 && i%3 === 0) {
+          console.log("FizzBuzz");
+        }else if (i%3 === 0) {
+          console.log("Fizz");
+        }else if (i%5 === 0) {
+          console.log("Buzz");
+        }else {
+          console.log(i);
+        }
+      }
+      //Exercise number 3
+      function chess(size) {
+        let board = "";
+        for (var x = 0; x < size; x++) {
+          for (var y = 0; y < size ; y++) {
+            if ((x+y) % 2 === 0) {
+              board += " ";
+            }else {
+              board += "#";
+            }
+          }
+          board += ("\n"+"_OI".repeat(size)+"\n");
+        }
+        console.log(board);
+      }
+      chess(7);
+    </script>
+  </body>
+</html>

@@ -20,3 +20,17 @@ while (numDo <= 12) {
 for (var i = 0; i <= 12; i++) {
   console.log(i);
 }
+
+switch (prompt("What the weathertoday", "")) {
+  case "rainy":
+    console.log("Don't forget your umbrella");
+    break;
+  case "clear":
+    console.log("Have fun it's clear today");
+    break;
+  case cloudy:
+    console.log("Get outside");
+    break;
+  default:
+    console.log("Unknown wheather type");
+}
