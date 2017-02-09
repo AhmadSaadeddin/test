@@ -28,18 +28,22 @@
       //Exercise number 3
       function chess(size) {
         let board = "";
-        for (var x = 0; x < size; x++) {
-          for (var y = 0; y < size ; y++) {
-            if ((x+y) % 2 === 0) {
-              board += " ";
-            }else {
-              board += "#";
+        for (var z = 0; z < 2; z++) {
+          for (var x = 0; x < size; x++) {
+            for (var y = 0; y < size ; y++) {
+              if ((x+y) % 2 === 0) {
+                board += " ";
+              }else {
+                board += "#";
+              }
             }
+            board += ("\n"+"_".repeat(size)+"\n");
+            }
+              board += ("\n"+"*".repeat(size)+"\n");
           }
-          board += ("\n"+"_OI".repeat(size)+"\n");
+          console.log(board);
         }
-        console.log(board);
-      }
+
       chess(7);
     </script>
   </body>
