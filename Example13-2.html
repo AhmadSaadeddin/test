@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Clock</title>
+    <script type="text/javascript">
+
+      function displayTime() {
+        let elt = document.getElementById("clock");
+        let dateNow = new Date();
+        elt.innerHTML = dateNow.toLocaleTimeString();
+        setTimeout(displayTime, 1000);
+      }
+      window.onload = displayTime;
+    </script>
+    <style media="screen">
+      #clock {
+        font: bold 24pt sans;
+        background: #ddf;
+        padding: 10px;
+        border: 2px solid #000;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="javascript:new Date().toLocaleTimeString();">What time is it</a>
+    <input type="checkbox" name="options" value="giftwarps" onchange="order.options.giftwarps = this.checked;">
+    <h1>Digital Clock</h1>
+    <span id="clock"></span>
+  </body>
+</html>
